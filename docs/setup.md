@@ -40,4 +40,4 @@ A successful result shows `glofox_lakehouse` and a table count. The endpoint and
 
 ## 6. Open the folder in Cursor
 
-Open the cloned folder as the project. The skill in `.cursor/skills/lakehouse-reader/` is picked up from that project. Ask a question from chat, or keep running the script yourself. See [Usage](usage.md).
+Open the cloned folder as the project. Cursor picks up the Lakehouse Reader skill in `.cursor/skills/lakehouse-reader/`. Ask a question from chat, or keep running the script yourself. See [Usage](usage.md) and the [table catalog](catalog/index.md).

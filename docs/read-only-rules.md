@@ -1,6 +1,6 @@
 # Read-only rules
 
-`Invoke-LakehouseQuery.ps1` checks the SQL text before it opens a connection. A rejected statement never reaches the lakehouse.
+Lakehouse Reader checks the SQL text in `Invoke-LakehouseQuery.ps1` before it opens a connection. A rejected statement never reaches the lakehouse.
 
 ## Allowed
 

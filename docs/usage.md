@@ -1,6 +1,6 @@
 # Usage
 
-Open this repo in Cursor and ask in plain language. The agent should explain the table, then run one read-only query through `Invoke-LakehouseQuery.ps1`.
+Open this repo in Cursor and ask Lakehouse Reader in plain language. It reads the [table catalog](catalog/index.md), explains the table, then runs one read-only query through `Invoke-LakehouseQuery.ps1`.
 
 You can also run the script yourself from the repo folder.
 
@@ -13,7 +13,7 @@ Examples:
 - Are there duplicate `branch_id` values in `gold_layer.dim_branch_all`?
 - Show 20 column names from `gold_layer.fct_user_membership`.
 
-The agent looks up the table, writes one `SELECT`, and uses the script output in the answer.
+Lakehouse Reader looks up the table in the catalog, writes one `SELECT`, and uses the script output in the answer. For a duplicate check, it uses the catalog's clustered columns when you do not name a key.
 
 ## Run a query yourself
 

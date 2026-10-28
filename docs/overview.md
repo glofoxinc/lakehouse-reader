@@ -8,7 +8,8 @@ It does not create, update, delete, or insert data.
 
 | Piece | File | Role |
 |---|---|---|
-| Agent skill | `.cursor/skills/lakehouse-reader/SKILL.md` | Tells Cursor how to explain a table and how to query |
+| Agent skill | `.cursor/skills/lakehouse-reader/SKILL.md` | Tells Cursor to act as Lakehouse Reader |
+| Table catalog | `docs/catalog/index.md` | Every QA table, its columns, and the notebook that builds it |
 | Query runner | `Invoke-LakehouseQuery.ps1` | Sends one `SELECT` or `WITH` statement and blocks writes |
 | Connection | `config.json` | QA SQL endpoint and database name. No password |
 | Setup guide | `README.md` and `docs/setup.md` | How to install and sign in |
@@ -23,6 +24,7 @@ Cloning the repo does not grant data access. Each person needs:
 
 ## Further reading
 
+- [Table catalog](catalog/index.md)
 - [Setup](setup.md)
 - [Usage](usage.md)
 - [Read-only rules](read-only-rules.md)

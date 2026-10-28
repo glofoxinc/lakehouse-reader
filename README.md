@@ -1,6 +1,6 @@
 # Lakehouse Reader
 
-Read-only questions against the QA `glofox_lakehouse` SQL endpoint. The runner accepts one `SELECT` or `WITH` statement and rejects anything that creates, changes, or deletes data.
+Lakehouse Reader answers read-only questions against the QA `glofox_lakehouse` SQL endpoint. The runner accepts one `SELECT` or `WITH` statement and rejects anything that creates, changes, or deletes data. Table names, columns, and the notebook that builds each table are in the [catalog](docs/catalog/index.md).
 
 Each person signs in with their own Microsoft account. The script does not store a password. Fabric permissions still decide which tables you can read.
 
@@ -24,7 +24,7 @@ Use the work account that can read the QA lakehouse.
 
 ## Ask a question
 
-Open this folder in Cursor and ask about a table, for example whether it has duplicates. The project skill tells the agent to explain the table and run the query through `Invoke-LakehouseQuery.ps1`.
+Open this folder in Cursor and ask Lakehouse Reader about a table, for example whether it has duplicates. The project skill tells Lakehouse Reader to read the catalog, explain the table, and run the query through `Invoke-LakehouseQuery.ps1`.
 
 Or run a query yourself:
 
@@ -37,6 +37,7 @@ The endpoint and database name are in `config.json`.
 ## Documentation
 
 - [Overview](docs/overview.md)
+- [Table catalog](docs/catalog/index.md)
 - [Setup](docs/setup.md)
 - [Usage](docs/usage.md)
 - [Read-only rules](docs/read-only-rules.md)
