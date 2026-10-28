@@ -33,3 +33,10 @@ Or run a query yourself:
 ```
 
 The endpoint and database name are in `config.json`.
+
+## Documentation
+
+- [Overview](docs/overview.md)
+- [Setup](docs/setup.md)
+- [Usage](docs/usage.md)
+- [Read-only rules](docs/read-only-rules.md)
