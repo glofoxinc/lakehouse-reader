@@ -13,7 +13,7 @@ Examples:
 - Are there duplicate `branch_id` values in `gold_layer.dim_branch_all`?
 - Show 20 column names from `gold_layer.fct_user_membership`.
 
-Lakehouse Reader looks up the table in the catalog, writes one `SELECT`, and uses the script output in the answer. For a duplicate check, it uses the catalog's clustered columns when you do not name a key.
+Lakehouse Reader looks up the table in the catalog, writes one `SELECT`, and uses the script output in the answer. It names only the columns the question needs. It uses `SELECT *` only when you explicitly ask for every column. For a duplicate check, it uses the catalog's clustered columns when you do not name a key.
 
 ## Run a query yourself
 

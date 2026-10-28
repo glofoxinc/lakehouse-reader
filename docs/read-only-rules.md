@@ -6,6 +6,7 @@ Lakehouse Reader checks the SQL text in `Invoke-LakehouseQuery.ps1` before it op
 
 - One statement
 - The statement starts with `SELECT` or `WITH`
+- Lakehouse Reader names only the columns the question needs. It writes `SELECT *` only when you explicitly ask for every column or for `SELECT *`
 
 ## Rejected
 
